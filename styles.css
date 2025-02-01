@@ -1,0 +1,366 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    background-color: #FEFAE0; /* Light Cream background */
+    color: #283618; /* Dark Olive text color */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for headings */
+    color: #606C38; /* Olive Green for headings */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #606C38; /* Olive Green header */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #FEFAE0; /* Light Cream links */
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #BC6C25; /* Rust Orange hover effect */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #606C38, #DDA15E); /* Olive Green to Warm Tan gradient */
+    color: #FEFAE0; /* Light Cream text */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    animation: fadeIn 2s ease-out;
+}
+
+.highlight {
+    color: #BC6C25; /* Rust Orange highlight */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero-content .btn {
+    background-color: #DDA15E; /* Warm Tan button */
+    color: #283618; /* Dark Olive text */
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #BC6C25; /* Rust Orange on hover */
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #FFF;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #606C38; /* Olive Green for section title */
+    animation: fadeIn 2s ease-out;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #283618; /* Dark Olive text */
+    line-height: 1.8;
+}
+
+/* Education Section */
+.education {
+    padding: 60px 20px;
+    background-color: #DDA15E; /* Warm Tan background */
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #BC6C25; /* Rust Orange */
+    animation: fadeIn 2s ease-out;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.education-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.education-card h3 {
+    font-size: 1.6rem;
+    color: #283618; /* Dark Olive */
+}
+
+.education-card p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 60px 20px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #606C38; /* Olive Green */
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.achievement-card {
+    background-color: #BC6C25; /* Rust Orange */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.achievement-card p {
+    font-size: 1.2rem;
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 20px;
+    background-color: #FEFAE0; /* Light Cream */
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #606C38; /* Olive Green */
+    animation: fadeIn 2s ease-out;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.skills-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.skills-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.skills-card ul {
+    font-size: 1.1rem;
+    color: #283618; /* Dark Olive */
+    margin-top: 10px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 60px 20px;
+    background-color: #BC6C25; /* Rust Orange */
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #FEFAE0; /* Light Cream */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.project-card {
+    background-color: #606C38; /* Olive Green */
+    color: #FEFAE0; /* Light Cream */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 1.2rem;
+}
+
+.project-card .btn {
+    background-color: #DDA15E; /* Warm Tan */
+    color: #283618; /* Dark Olive */
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #606C38; /* Olive Green */
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #283618; /* Dark Olive */
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #FEFAE0; /* Light Cream */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-link {
+    color: #FEFAE0; /* Light Cream */
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #BC6C25; /* Rust Orange */
+}
+
+/* Footer */
+footer {
+    background-color: #606C38; /* Olive Green */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
